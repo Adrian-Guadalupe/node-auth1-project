@@ -3,17 +3,6 @@
   "version": "1.0.0",
   "description": "## Topics",
   "main": "index.js",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "express": "^4.17.1",
-    "express-session": "^1.17.1",
-    "helmet": "^3.22.0",
-    "knex": "^0.21.0",
-    "sqlite3": "^4.1.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon"
@@ -28,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/Adrian-Guadalupe/node-auth1-project/issues"
   },
-  "homepage": "https://github.com/Adrian-Guadalupe/node-auth1-project#readme"
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^3.22.0",
+    "knex": "^0.21.0",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
 }

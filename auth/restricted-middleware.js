@@ -1,4 +1,4 @@
-module.extports = (req, res, next) => {
+module.exports = (req, res, next) => {
    req.session && req.session.user
       ?  next()
       :  res.status(401).json({ message: 'please log in'})

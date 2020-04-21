@@ -4,7 +4,7 @@ const router = require('express').Router()
 
 const Users = require('../users/users-model.js')
 
-router.post('register', (req, res) => {
+router.post('/register', (req, res) => {
    const userInfo = req.body
 
    const ROUNDS = process.env.HASHING_ROUNDS || 8
@@ -16,7 +16,7 @@ router.post('register', (req, res) => {
       .then(user => {
          res.json(user)
       })
-      .catch(err => res.send(err))
+      .catch(err => res.send({ stat: 'err', msg: err.message }))
 })
 
 router.post('/login', (req, res) => {

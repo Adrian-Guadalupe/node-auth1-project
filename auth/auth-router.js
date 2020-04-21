@@ -24,7 +24,7 @@ router.post('/login', (req, res) => {
 
    Users.findBy({ username })
       .then(([user]) => {
-         if (user && ncrypt.compareSync(password, user.password)) {
+         if (user && bcrypt.compareSync(password, user.password)) {
             req.session.user = {
                id: user.id,
                username: user.username

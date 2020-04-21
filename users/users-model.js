@@ -16,7 +16,7 @@ async function add(user){
 const findById = (id) => {
    return db('users')
       .where({ id })
-      .select('is', 'username')
+      .select('id', 'username')
       .first()
 }
 
